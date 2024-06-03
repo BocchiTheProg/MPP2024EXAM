@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_06_03_114417) do
+ActiveRecord::Schema[7.1].define(version: 2024_06_03_123542) do
+  create_table "api_request_logs", force: :cascade do |t|
+    t.string "method"
+    t.string "path"
+    t.integer "status"
+    t.float "duration"
+    t.string "ip"
+    t.text "params"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "toys", force: :cascade do |t|
     t.string "name"
     t.string "material"

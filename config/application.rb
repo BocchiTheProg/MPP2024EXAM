@@ -1,4 +1,5 @@
 require_relative "boot"
+require_relative '../app/middleware/api_request_logger'
 
 require "rails/all"
 
@@ -8,6 +9,7 @@ Bundler.require(*Rails.groups)
 
 module DemoProject
   class Application < Rails::Application
+    config.middleware.use ApiRequestLogger
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.1
 

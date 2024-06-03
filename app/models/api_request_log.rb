@@ -1,0 +1,2 @@
+class ApiRequestLog < ApplicationRecord
+end
