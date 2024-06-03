@@ -10,4 +10,6 @@ Rails.application.routes.draw do
   # root "posts#index"
 
   root to: "index#index"
+
+  get 'greetings/:name', to: 'greetings#show', as: 'greeting'
 end
