@@ -1,0 +1,8 @@
+ua:
+  welcome: "Вітаємо на головній сторінці"
+  user: "Користувач"
+  hello: "Вітаємо %{name}"
+  time:
+    formats:
+      short: "%M:%H"
+      long: "%S:%M:%H"
