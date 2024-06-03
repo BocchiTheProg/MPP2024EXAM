@@ -1,0 +1,2 @@
+class Doll < Toy
+end
